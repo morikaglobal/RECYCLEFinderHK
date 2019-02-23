@@ -370,7 +370,7 @@ h9 span{
 #searchhistory,
 #actionhistory {
     background-color:#8BC63E;
-    margin: 20px 0;
+    margin-bottom: 20px;
     padding: 20px 80px;
 }
 
@@ -560,7 +560,7 @@ h9 ul {
     color: white;
 }
 
-#tomap {
+#tohome {
     margin-bottom: 15px;
 }
 
