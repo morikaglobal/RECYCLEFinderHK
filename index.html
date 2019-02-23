@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="main.css">
+    <title>RECYCLEFinder HK</title>
+    <link rel="shortcut icon" href="assets/images/recycle.ico">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle" id="navmenu" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>                        
+                </button>
+
+                <a class="navbar-brand" href="info.html"><span class="glyphicon glyphicon-refresh"></span> RECYCLEFinder HK</a>
+            </div>
+
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+
+                    <li><a href="info.html">ABOUT THIS SITE</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div id="outer-container">
+        <div id="wrap" class="container">
+
+            <div class="text-center">
+                <h1><i class="fa fa-search" aria-hidden="true"></i> Recyclable Points Locator</h1>
+                <p>Search for Recyclable collection points<br>near where you are or for your preferred location<br> for where
+                    and what you can recycle to make Hong Kong a greener place!</p>
+
+                <div class="disclaimer">
+                    <p><span><b>PLEASE NOTE</b> Current location search will not work if you are accessing from outside Hong Kong</span><br>
+                        <span>If you are, please type any location in Hong Kong such as "TIMES SQUARE"<br>
+                and it will search for the nearest recyclable points!</span></p>
+                </div>
+            </div>
+
+            <div class="tab-content text-center">
+                <div id="current" class="tab-pane fade in active">
+                    <div class="container" id="map-container">
+                        <div id="map-menu">
+                            <nav class="navbar navbar-default">
+                                <div class="container-fluid">
+                                    <div class="navbar-header">
+                                        <button type="button" id="mapnavbar" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false"
+                                            aria-controls="navbar">
+                                        <span class="sr-only">Toggle navigation</span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                        <span class="icon-bar"></span>
+                                    </button>
+                                    </div>
+                                    <div id="navbar" class="navbar-collapse collapse">
+                                        <ul class="nav navbar-nav">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                <span class='glyphicon glyphicon-trash'></span> Waste Type
+                                                <span class="caret"></span>
+                                            </a>
+                                                <ul class="dropdown-menu dropdown-menu-form" id="waste-type">
+                                                    <li>
+                                                        <input type="checkbox" id="waste-type-1" value="Barbeque Fork" name="waste-type">
+                                                        <label for="waste-type-1">Barbeque Fork</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="waste-type-2" value="Clothes" name="waste-type">
+                                                        <label for="waste-type-2">Clothes</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="waste-type-3" value="Electrical and Electronic Equipment" name="waste-type">
+                                                        <label for="waste-type-3">Electrical and Electronic Equipment</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="waste-type-4" value="Fluorescent Lamp" name="waste-type">
+                                                        <label for="waste-type-4">Fluorescent Lamp</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="waste-type-5" value="Glass Bottles" name="waste-type">
+                                                        <label for="waste-type-5">Glass Bottles</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="waste-type-6" value="Metals" name="waste-type">
+                                                        <label for="waste-type-6">Metals</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="waste-type-7" value="Paper" name="waste-type">
+                                                        <label for="waste-type-7">Paper</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="waste-type-8" value="Plastics" name="waste-type">
+                                                        <label for="waste-type-8">Plastics</label>
+                                                    </li>
+                                                    <li>
+                                                        <input type="checkbox" id="waste-type-9" value="Rechargeable Batteries" name="waste-type">
+                                                        <label for="waste-type-9">Rechargeable Batteries</label>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                        <ul class="nav navbar-nav navbar-right">
+                                            <li class="dropdown">
+                                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                                <span class='glyphicon glyphicon-road'></span> Travel mode
+                                                <span class="caret"></span>
+                                            </a>
+                                                <ul class="dropdown-menu dropdown-menu-form" id="travel-mode">
+                                                    <li data-id="walking" class="active">
+                                                        <a>Walking</a>
+                                                    </li>
+                                                    <li data-id="driving">
+                                                        <a>Driving</a>
+                                                    </li>
+                                                    <li data-id="transit">
+                                                        <a>Public Transport</a>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!--/.nav-collapse -->
+                                </div>
+                                <!--/.container-fluid -->
+                            </nav>
+                        </div>
+                        <div id="map"></div>
+                        <!-- /.modal -->
+                    </div>
+                    <div id="search" class="container">
+
+                        <div class="container centeralign">
+
+                            <button id="showloc" class="btn btn-green btn-default btn-block" onClick="clearField()">
+                                <i class="fa fa-map-marker" aria-hidden="true"></i> Search for nearest Recycling Points</button>
+                            <div class="input-group" id="searchloc">
+                                <div>
+                                    <h4>Search for Recycling points near...</h4>
+                                </div>
+
+
+                                <div class="input-group searchform">
+                                    <input type="text" class="form-control" id="location" placeholder="District, Street Name or Building" aria-label="Search for...">
+                                    <span class="input-group-btn">
+		                            <button type="button" class="btn btn-default"><i class="fa fa-search" aria-hidden="true"></i></button>
+	                                </span>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div id="list"></div>
+                    </div>
+                </div>
+
+                <div id="type" class="tab-pane fade">
+                    <h3>Leave this tab and section for now for optional/additional function</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- <script> fix and add thsi part to map.js for geolocation error alert
+// var map, infoWindow;
+//       function initMap() {
+//         map = new google.maps.Map(document.getElementById('map'), {
+//           center: {lat: 22.2799, lng: 114.1897},
+//           zoom: 11
+//         });
+//         infoWindow = new google.maps.InfoWindow;
+
+//         // Try HTML5 geolocation.
+//         if (navigator.geolocation) {
+//           navigator.geolocation.getCurrentPosition(function(position) {
+//             var pos = {
+//               lat: position.coords.latitude,
+//               lng: position.coords.longitude
+//             };
+
+//             infoWindow.setPosition(pos);
+//             infoWindow.setContent('Your current location');
+//             infoWindow.open(map);
+//             map.setCenter(pos);
+//           }, function() {
+//             handleLocationError(true, infoWindow, map.getCenter());
+//           });
+//         } else {
+//           // Browser doesn't support Geolocation
+//           handleLocationError(false, infoWindow, map.getCenter());
+//         }
+//       }
+
+//       function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+//         infoWindow.setPosition(pos);
+//         infoWindow.setContent(browserHasGeolocation ?
+//                               'Error: The Geolocation service failed.' :
+//                               'Error: Your browser doesn\'t support geolocation.');
+//         infoWindow.open(map);
+//       }
+
+</script> -->
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?language=en&key=AIzaSyBTb0ALJcvvU_k_9YUcWUGXKhdyUYLpws8&libraries=places&callback=initMap"
+        async defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

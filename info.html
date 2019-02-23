@@ -1,0 +1,265 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Latest compiled and minified CSS -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+
+    <link rel="stylesheet" href="main.css"> 
+
+    <!-- <script src="/js/main.js"></script>  -->
+    <title>RECYCLEFinder HK</title>
+    <link rel="shortcut icon" href="assets/images/recycle.ico">
+    
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-custom">
+        <div class="container-fluid">
+            <div class="navbar-header">
+            
+            <button type="button" class="navbar-toggle" id="navmenu" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+                
+                <a class="navbar-brand" href="index.html"><span class="glyphicon glyphicon-refresh"></span> RECYCLEFinder HK</a>
+                <!-- <button class="btn btn-primary navbar-btn">Login</button> -->
+            </div>
+    
+            <div class="collapse navbar-collapse navbar-right" id="myNavbar">
+                <ul class="nav navbar-nav">
+    
+                    <li><a href="index.html">Back to HOME / SEARCH</a></li>
+    
+    
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div>
+        <div id="wrap" class="container">
+
+            <div id="wrap-inner" class="container">
+
+                <div id="inner" class="container">
+
+                    <div id="userinfo">
+
+                        <div class="text-center">
+
+                                <div id="randomgenerator">
+                                        
+                                </div>
+
+                            <strong><p>Search for Recyclable points?</p></strong>
+
+                            <button id='tomap' class='btn btn-green btn-default btn-block' onclick='location.href = "index.html"' ; style='cursor:pointer;'>
+                  <i class="fa fa-search" aria-hidden="true"></i> Go to Recycling Points Locator</button>
+
+                            <!-- </a> -->
+
+                        </div>
+
+                    </div>
+
+                    <div id="randomgenerator">
+
+                    </div>
+
+
+                    <div id="searchhistory" class="text-center">
+                        <h8>About <span id="usergreeting">RECYCLEFinder HK</span></h8>
+                        <br><br>
+                        <h9><span id="usergreeting">RECYCLEFinder HK</span> was made to solve environmental issue in Hong Kong to encourage and help people in Hong Kong recycle more by making it easy to find recyclable points available in the city
+                        <br><br>
+                        What stops Hong Kong from recycling its waste?
+                        <br><br>
+                        <span>I have noticed that everyone in Hong Kong is now aware of the amount of waste we produce everyday and many are willing to recycle their waste more, however not many people are currently doing so, why?</span>
+                        <br><br>
+                        <span>One of the major reasons pointed out was the lack of recyclable points available in the city, and many asked</span><span> "How do we even find where we can take what waste to recycle?"</span>
+                        <br><br>
+                        <span>That is how I realised it may not be the lack of recyclable points available, but it is the difficulties in knowing and finding where they are in Hong Kong</span><br><br><span>If everyone could easily find where and what waste they can take near their home or office to recycle, will it remove excuses and help to get more people in Hong Kong to recycle?</span>
+                        <br><br>
+                        Hong Kong government provides the information and list of recyclable points in the city on the sites as below:
+                        <br><br>
+                        <span>
+                                <a href="https://www.wastereduction.gov.hk/en/quickaccess/vicinity.htm" target="_blank">
+                                    https://www.wastereduction.gov.hk/en/quickaccess/vicinity.htm</a>   
+                        </span>
+                        <br><br>
+                        <span>
+                                <a href="https://www.fehd.gov.hk/english/pleasant_environment/cleansing/collect.html" target="_blank">
+                                    https://www.fehd.gov.hk/english/pleasant_environment/cleansing/collect.html</a>   
+                        </span>
+                        <br><br>
+                        <span>
+                                <a href="https://data.gov.hk/en-data/dataset/hk-epd-recycteam-waste-less-recyclable-collection-points-data" target="_blank">
+                                    https://data.gov.hk/en-data/dataset/hk-epd-recycteam-waste-less-recyclable-collection-points-data</a>   
+                        </span>
+                        <br><br>
+                        So the information is available but it is not helpful when it comes to letting people easily find recyclable points nearest to where they live or work, or what can be recycled at each point
+                        <br><br>So other software developers and I have decided to use Recyclable Collection Points Data API from Hong Kong government with Google API to design and build a web app that user can easily find and locate recyclable points on the map
+                        </h9>
+
+                    </div>
+
+                    <div id="actionhistory" class="text-center">
+                        <h8>How this web app is made</h8>
+                        <br><br>
+                        <h9><span>Made as group project with other software developers with backend function so that users can
+                        register and login to store their recycling activities, this is simplified version with no register or login functions
+                        </span>
+                        <br><br>
+                        <h9><span>Other software developers worked on backend functions and Google API parts,</span> <span>I was mainly responsible for the data retrieval and rendering from Recyclable Collection Points Data API from Hong Kong government and frontend/UI of the app</span>
+                        <br><br>
+
+                        
+                        <ul>
+                                <li>Built with HTML5, CSS3, Bootstrap4 and JavaScript</li>
+                                <li>API with axios</li>
+                                <li>Fully Responsive Design</li>
+                        </ul>
+                        <div class="text-center">
+                        <a href="#" class="btn btn-primary source" target="_blank">
+                        <!-- Onclick="ga('send', 'event', 'link', 'click', 'Click for Source Code from RecycleFinder HK', true);" -->
+                    
+                            <i class="fas fa-code mr5"></i> View Source</a>
+
+            
+                        <br><br> 
+                        
+                        <span>For my other works and my portfolio site, please visit:</span><br>
+                        <a href="www.morikaglobal.com" target="_blank">
+                                www.morikaglobal.com</a>   
+                        
+                        <br>
+                        <a href="www.morikaglobal.com">
+                            <img class='portfolio' src="assets/images/morikaglobal.png" alt="MORIKA GLOBAL Portfolio Site"></a>
+                        </div>
+
+                    </div>
+
+
+                    <!-- <div id="panel-wrapper">
+
+                        <div id='panel' class="container text-center">
+
+                            {{!--
+                            <h11>You are GREENlife HK<br>user since:</h11> --}} {{!--
+                            <p id="usersince">userLog created data?</p> --}}
+
+                            <div id="panelresult">
+
+                                {{#if usageLogs}}
+
+                                <h11><span id="usergreeting">{{user.firstName}}</span><br> has recycled following waste types
+                                    below so far:</h11>
+
+                                {{#each usageLogs}}
+
+                                <p class="panelitem">{{this.recycle_item_name}}</p>
+
+                                {{/each}}
+
+                                <h11>our Reycling Points Locator also shows what recyclabe waste types are accepted at each points<br><br>                                    You can also filter the search with waste type selection<br><br></h11>
+
+                                {{else}}
+                                <div id="searcheddata">
+
+                                    <h11><span id="usergreeting">{{user.firstName}}</span><br> currently has no Recycling activity/Waste
+                                        types recycled recorded
+                                        <br><br><br> Start recording your Recycling activity now!<br><br></h11>
+
+                                </div>
+
+                                {{/if}}
+
+                                <button id='tomap' class='btn btn-green btn-default btn-block' onclick='location.href = "/"' ; style='cursor:pointer;'>
+                    <i class="fa fa-search" aria-hidden="true"></i> Search Now!</button>
+
+
+
+                            </div>
+
+                        </div>
+
+                        <div id='open'>
+                            <p>OPEN</p>
+                        </div>
+
+                    </div> -->
+
+                    <button id='tomap' class='btn btn-green btn-default btn-block' onclick='location.href = "index.html"' style='cursor:pointer;'>
+              <span class='glyphicon glyphicon-home'></span>  Back to Home / Search Page</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+    //random generator at the top of the page
+(function () {
+    
+          window.onload = function () {
+    
+            var n = Math.floor(Math.random() * 3);
+            console.log(n);
+            if (n === 0) {     // can use switch instead of if
+              renderResult(n);
+              // this.textContent = 'result here';
+            } else if (n === 1) {
+              renderResult(n);
+            } else {
+              renderResult(n);
+            }
+          };
+    
+          var resultDisplay = document.getElementById("randomgenerator");
+    
+          function renderResult(n) {
+            var htmlString = "";
+    
+            if (n == 0) {
+              htmlString += "<p>For reducing single-use paper cups in HK....</p>" +
+                "<p><a href = 'http://www.gocup.hk/' target='_blank'><img src='assets/images/gocup.jpg' height='250' width='250'/></p>" +
+                "<p>" + "Check out Go Cup HK for more information" + "</a></p>"
+            } else if (n == 1) {
+              htmlString += "<p>For recycling Rechageable Battery....</p>" +
+                "<p><a href = 'https://www.wastereduction.gov.hk/en/workplace/rechargebattery_intro.htm' target='_blank'><img src='assets/images/poster_rb.jpg' height='250' width='180'/></p>" +
+                "<p>" + "Check out government site for more details" + "</a></p>"
+            } else {
+              htmlString += "<p>For helpful guide on recycling glass bottles...</p>" +
+                "<p><a href = 'http://www.greenglass.org.hk/en/' target='_blank'><img src='assets/images/glassrecycle.jpg' height='250' width='180'/></p>" +
+                "<p>" + "Check out step-by-step guide on glass bottle recycling" + "</a></p>"
+            }
+    
+            clearDisplay();
+            resultDisplay.insertAdjacentHTML('beforeend', htmlString);
+    
+          }
+    
+          function clearDisplay() {
+            resultDisplay.innerHTML = "";
+          }
+    
+        })();
+    
+    </script>
+</body>
+
+</html>

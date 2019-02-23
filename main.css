@@ -1,0 +1,568 @@
+#wrap {
+    min-height: calc(100vh - 50px);
+}
+
+.navbar {
+    margin-bottom: 0;
+    background:green;
+    border-radius: 0;
+}
+
+.navbar-default .navbar-brand,
+.navbar-default .navbar-nav > li > a {
+    color: white;
+    font-weight: 800;
+  }
+
+#myNavbar > .navbar-nav > li > a {
+    float: right;
+}
+
+#navmenu.navbar-toggle {
+    border-color: #8BC63E;
+    border-width: 3px;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-custom {
+    color: white;
+    font-weight: 800;
+}
+
+#usergreeting {
+    color: green;
+}
+
+#wrap {
+    border: 1px solid lightgray;
+    background: #EDE8DF;  
+    padding-top: 10px;
+}
+
+body > div {
+    background: #8BC63E; 
+}
+
+/* only apply to p right after h1 */
+h1+p {
+    color: green;
+}
+
+#tabs {
+    margin-bottom: 20px;
+}
+
+#showloc {
+    margin-bottom: 1em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#searchloc.input-group {
+    margin: 0 auto;
+    width: 80%;
+}
+
+
+#map-container {
+    width: 100%;
+    margin-top: 10px;
+}
+
+#map-menu {
+    z-index: 5;
+    width: 100%;
+}
+
+#map-container .navbar-default {
+    background-color:#8BC63E;
+}
+
+#map-container .navbar {
+    padding: 0 1em;
+    margin-bottom: 0;
+}
+
+#mapnavbar.navbar-toggle.collapsed {
+    /* border-color: green; */
+    border-width: 3px;
+}
+
+span.icon-bar {
+    background-color: lightgreen;
+}
+
+#routebtn {
+    margin: 5px 0;
+    padding: 5px 10px;
+}
+
+#mapbox {
+    background: lightgreen;
+    padding: 10px 10px 0 10px;
+}
+
+#mapbox:first-child {
+    font-weight: bold;
+}
+
+h4 {
+    color: green;
+}
+
+/* for Google Map Autocomplete to show upwards*/
+.pac-container
+{
+	position:fixed;
+	display:block;
+	margin-top: -210px;
+}
+
+#navbar ul {
+    min-width: 50%;
+}
+
+#navbar ul li {
+    width: 100%;
+}
+
+#navbar ul li ul {
+    width: 100%;
+}
+
+#navbar ul li ul .active a {
+    background: #008000;
+    color: white;
+    font-weight: 700;  
+}
+
+#navbar ul li ul a {
+    font-weight: 700;
+    background: white;
+    cursor: pointer;
+}
+
+#map-menu nav .container-fluid {
+    width: 100%;
+    padding: 0;
+}
+
+.dropdown-menu {
+    padding: 0;
+}
+
+.dropdown-menu > li > a {
+    font-weight: 500;
+}
+
+/* Map and search query section */
+#map {
+    height: 50vh;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.container-fluid {
+    padding: 0 60px;
+}
+
+
+.navbar-default {
+    border: none;
+}
+
+h1 {
+    color:green; 
+    font-weight: 800;
+}
+
+#current {
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+#search {
+    width: 70vw;
+    width: 90%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.container.centeralign {
+    padding: 0;
+    width: 100%;
+}
+
+.btn-default {
+  background-color: green;
+  color: white;
+}
+
+.btn-default:hover,
+.btn-default:focus {
+    background:#8BC63E;
+}
+
+.btn-default:active {
+    background:lightgreen;
+    }
+
+.searchform {
+    /* %of the screen width */
+    width: 100%;
+}
+
+/* Waste Type filter section */
+
+.checkbox * {
+    color: white;
+    font-weight: bold;
+}
+
+#waste-type > li:first-child,
+.checkbox:first-child {
+    background-color: #FF0000;
+    
+}
+
+#waste-type > li:nth-child(2),
+.checkbox:nth-child(2) {
+    background-color: #FFA500;
+}
+
+#waste-type > li:nth-child(3),
+.checkbox:nth-child(3) {
+    background-color: #800080;
+}
+
+#waste-type > li:nth-child(4),
+.checkbox:nth-child(4) {
+    background-color: #ADD8E6;
+}
+
+#waste-type > li:nth-child(5),
+.checkbox:nth-child(5) {
+    background-color: #008000;
+}
+
+#waste-type > li:nth-child(6),
+.checkbox:nth-child(6) {
+    background-color: #FFFF00;
+}
+
+#waste-type > li:nth-child(7),
+.checkbox:nth-child(7) {
+    background-color: #0000FF;
+}
+
+#waste-type > li:nth-child(8),
+.checkbox:nth-child(8) {
+    background-color: #8B4513;
+}
+
+#waste-type > li:nth-child(9),
+.checkbox:nth-child(9) {
+    background-color: #999999;
+}
+
+/* Current Location Search Button */
+.btn-green,
+.btn-secondary {
+    background: green;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 3vmin;
+    white-space: normal;
+}
+
+.btn-secondary {
+    padding-top: 8px;
+}
+
+.btn-green:hover, 
+.btn-green:focus {
+    background:#8BC63E;
+}
+
+.btn-green:active {
+background:lightgreen;
+}
+
+h4, h5 {
+    font-size: 1.5vw;
+    font-weight: 700;
+} 
+
+
+/* Search Result List */
+
+h3 {
+    font-size: 20px;
+    font-weight: 900;
+    text-align: center;
+}
+
+#listBox {
+    margin: 20px 0;
+    background-color: lightgreen;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: black;
+}
+
+#listBox:hover,
+#listBox a:hover,
+#listBox:focus {
+    background:#8BC63E;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+
+.align-left {
+    text-align: left;
+    margin: 0 5vw;
+}
+
+#listBox:active {
+    background:lightgreen;
+}
+
+h7 {
+    color: green;   
+    font-weight: 900;
+}
+
+
+/* CSS for profile/dashboard page */
+
+/* #wrap-inner > div {
+    margin-left: 10px;
+} */
+
+/* CSS for profile/dashboard page - User greeting/info */
+
+h8, h10, h11 {
+    font-size: 2vw;
+    font-weight: 700;
+}
+
+h9 {
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+
+h9 span{
+    word-wrap: break-word;
+}
+
+#userinfo > div {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+#searchhistory,
+#actionhistory {
+    background-color:#8BC63E;
+    margin: 20px 0;
+    padding: 20px 80px;
+}
+
+/* CSS for profile/dashboard page - Random display section */
+
+#randomgenerator p {
+    color: black;
+    width: 100%;
+    text-align: center;
+    font-size: 1.5vw;
+    font-weight: 700;
+}
+  
+img {
+    margin: 0 auto;
+}
+
+/* CSS for profile/dashboard page - overlap of two divs */
+
+#wrap-inner {
+    position: relative; /* do not change this */
+    z-index:1;
+    /* width: 80%; */
+}
+
+#panel-wrapper {
+    position: absolute; /* do not change this */
+    z-index:2;
+    /* Below CSS will get the exact anchor point as the #wrap-inner
+    as well as change its height according to its parent element which is #wrap-inner */
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+/* CSS for profile/dashboard page - panel section */
+
+#panel {
+     height: 100%;
+     width: 300px;
+     padding:20px;
+     background: #eee;
+     float: left;
+     display: none;    
+     color: #666;
+     font-size: 1vw;
+}
+
+#open {
+     height: 20px;
+     width: 70px;
+     background: green;
+     padding: 20px 65px 40px 20px;
+     float: left;
+     margin: 200px 0 20px 0;
+     color:#fff;
+     cursor: pointer;
+}
+
+#panelresult {
+    margin-top: 20px;
+}
+
+.panelitem,
+#usersince {
+    font-size: 3vh;
+    padding: 10px 0;
+    font-weight: 700;
+    color: white;
+    margin: 20px 0;
+}
+
+#usersince {
+    background-color: green;
+}
+
+#inner {
+    width: 80%;
+    margin: 0 auto;
+}
+
+/* CSS for profile/dashboard page - search history section */
+#mocklist {
+    width: 70%;
+    margin: 0 auto;
+}
+
+#searcheddata {
+    background:lightgreen;
+    margin: 20px 0;
+    padding: 10px 20px;
+}
+
+/* CSS for profile/dashboard page - Recycling activity section */
+th {
+    text-align: center;
+    
+}
+
+tbody {
+    font-weight: 700;
+}
+
+td {
+    text-align: center;
+    height: 36px;
+    border-top: none;
+}
+
+.itemcolor {
+    font-size: 3vw;
+    line-height: 36px;
+}
+
+.quantity{
+    margin: 0 auto;
+    height: 36px;
+    width: 36px;
+    border-radius: 50%; 
+    line-height: 36px;
+    font-weight: 900;
+    font-size: 2vw;
+} 
+
+table, th, td, .table>tbody+tbody {
+    border-style:none!important;
+}
+
+/* #shareBtn {
+    margin-bottom: 20px;
+    font-size: 3vmin;
+    font-weight: 700;
+} */
+
+@media only screen and (max-width: 767px) {
+
+    .container {
+        padding: 0;
+    }
+
+    #mocklist {
+        width: 100%;
+    }
+
+    #searchdata {
+        margin: 20px 0;
+        padding: 10px 0;
+    }
+
+    #listBox {
+        width: 90%;
+        margin: 20px auto;
+    }
+
+    #search {
+        width: 90%;
+    }
+
+    #showloc,
+    #searchloc {
+        width: 80%;
+    }
+
+    h4, h5 {
+        font-size: 3vw;
+    } 
+    
+}
+
+/* INFO page - newly added for simplified version of the app */
+
+.portfolio {
+    width: 100%;
+    max-width: 500px;
+    margin-top: 10px;
+}
+
+h9 ul {
+    text-align: left;
+}
+
+.disclaimer {
+    background-color: green;
+    width: 70%;
+    margin: 0 auto;
+    padding: 10px 0 5px 0;
+    color: white;
+}
+
+#tomap {
+    margin-bottom: 15px;
+}
+
+
+    
